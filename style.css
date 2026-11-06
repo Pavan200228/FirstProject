@@ -1,0 +1,523 @@
+```css
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: whitesmoke;
+    color: #fff;
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    display: block;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('window.webp');
+    border: 5px solid black;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 25px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* Common Button */
+.button {
+    display: inline-block;
+    background: #159ed5;
+    color: powderblue;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: white;
+    color: #159ed5;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 60px 5%;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.benefit {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.benefit h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Feature Section */
+.feature {
+    padding: 70px 5%;
+    background: #f5f7f8;
+    border: 5px solid black;
+    box-shadow: 10px 10px 5px 12px  rgb(12, 179, 234) ;
+}
+
+.feature-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+   
+}
+
+.feature h2 {
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.feature li {
+    margin: 10px 0;
+}
+
+/* Dashboard Preview */
+.preview {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('white.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    border: 5px solid #ddd;
+}
+
+/* Pricing Section */
+.pricing {
+    background: #f5f7f8;
+    padding: 70px 5%;
+    text-align: center;
+}
+
+.pricing-title {
+    text-align: left;
+    color: blue;
+}
+
+.pricing-heading {
+    font-size: 50px;
+    text-align: left;
+}
+
+.pricing-description {
+    text-align: left;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.price-card {
+    background: white;
+    padding: 25px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: 3px solid #159ed5;
+}
+
+.price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px #0002;
+}
+
+.price-card h3 {
+    background: #159ed5;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.price-card h2 {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.price-card p {
+    padding: 10px;
+    color: #777;
+    border-radius: 25px;
+}
+
+/* Most Popular Pricing Card */
+.price-card.popular {
+    border: 3px solid #159ed5;
+    position: relative;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px #0002;
+}
+
+.popular-label {
+    display: inline-block;
+    background: #159ed5;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Pricing Buttons */
+.price-card a {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #159ed5;
+    color: #159ed5;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+    background: black;
+    color: white;
+}
+
+/* Download Section */
+.download {
+    padding: 70px 5%;
+    text-align: center;
+}
+
+.download h2 {
+    margin-bottom: 15px;
+}
+
+.download p {
+    margin-bottom: 15px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 70px 8%;
+    text-align: center;
+    background-image: linear-gradient(to right,black,   #159ed5);
+    color: white;
+    border:5opx solid black:
+}
+
+.testimonials h2 {
+    font-size: 32px;
+}
+
+.section-description {
+    margin: 15px 0 35px;
+    color: #b8c2d1;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+}
+
+.testimonial-card h3 {
+    color: #ffc857;
+    margin-bottom: 15px;
+}
+
+.testimonial-card p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.testimonial-card h4 {
+    margin-bottom: 8px;
+    color: #159ed5;
+}
+
+.testimonial-card span {
+    color: black ;
+    font-size: 14px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 70px 8%;
+    background: #f5f7fa;
+    color: #101828;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.faq details {
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq details p {
+    margin-top: 15px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    background-image: url('tree.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 70px 5%;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact input,
+.contact textarea,
+.contact select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+/* Form Elements */
+label {
+    display: block;
+}
+
+/* Footer Section */
+.footer {
+    background: #0b1220;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 12px;
+}
+
+.footer p {
+    margin: 12px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #70a5ff;
+}
+
+.footer .copyright {
+    color: #aab3c2;
+    font-size: 14px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    box-shadow: 0 4px 12px #0003;
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    background: #159ed5;
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .nav-links a {
+        padding: 8px 12px;
+    }
+
+    .benefit-grid,
+    .feature-content,
+    .pricing-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .pricing-heading {
+        font-size: 32px;
+    }
+
+    .price-card.popular {
+        transform: none;
+    }
+
+    .testimonials h2 {
+        font-size: 26px;
+    }
+
+    .faq,
+    .testimonials {
+        padding: 50px 5%;
+    }
+}
